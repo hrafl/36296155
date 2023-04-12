@@ -1,0 +1,18 @@
+{
+    "materialType":[
+        {
+            "name": "Alu",
+            "productTypes":[
+                {
+                    "name": "Rundstangen",
+                    "characteristics":[
+                        {
+                            "name": "Bohr-u-Drehqualitaet-AlCuMgPb"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "exportFileType": "xlsx"
+}
