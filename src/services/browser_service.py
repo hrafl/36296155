@@ -30,13 +30,13 @@ def create_new_instance() -> WebDriver:
 
 def __create_new_chrome_instance__() -> Chrome:
     options = ChromeOptions()
-    # options.add_argument('--headless')
+    options.add_argument('--headless')
     browser = Chrome(chrome_options=options)
     return browser
 
 def __create_new_firefox_instance__() -> Firefox:
     options = FirefoxOptions()
-    # options.add_argument('--headless')
+    options.add_argument('--headless')
     browser = Firefox(options=options)
     return browser
 
