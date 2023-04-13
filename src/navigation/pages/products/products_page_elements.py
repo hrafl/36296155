@@ -88,6 +88,13 @@ class ProductCard(PageElement):
             return text
         except: pass
 
+    def get_wgr(self) -> int:
+        try:
+            attributes_container = self._get_attributes_container()
+            text = attributes_container.find_element(By.CLASS_NAME, "additional_attributes").find_element(By.TAG_NAME, "span").text.strip()
+            return int(text)
+        except: pass
+
     def get_unit_of_measure(self) -> str:
         try:
             product_details_and_actions_container = self._get_product_details_and_actions_container()
