@@ -1,10 +1,10 @@
-# ProjectId
+# Project Id
     36296155
 
 # Project Description
     Read products data from a website and storage in a file (xlsx, csv or json)
 
-# project url
+# Project url
     https://www.freelancer.com/projects/web-scraping/need-web-scraping-expert-36296155/details?edit=true
 
 # ------------------------------------
