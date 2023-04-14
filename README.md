@@ -2,9 +2,7 @@
     36296155
 
 # Project Description
-    "i need daty entry/copy typing from an website into excel sheet.
-    Around 100 products with each 10 specification.
-    I will provide example and desciption."
+    Read products data from a website and storage in a file (xlsx, csv or json)
 
 # project url
     https://www.freelancer.com/projects/web-scraping/need-web-scraping-expert-36296155/details?edit=true
