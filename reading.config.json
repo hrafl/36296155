@@ -4,6 +4,14 @@
             "name": "Alu",
             "productTypes":[
                 {
+                    "name": "Sechskantstangen",
+                    "characteristics":[
+                        {
+                            "name": "Hochfest-AlZnMgCu1-5"
+                        }
+                    ]
+                },
+                {
                     "name": "Rundstangen",
                     "characteristics":[
                         {

@@ -5,6 +5,7 @@ from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.remote.webdriver import WebDriver
 
 from src.models.product import Product
+from src.services import browser_service
 
 
 class ProductCard(object):
@@ -120,7 +121,13 @@ class ProductsPageContentReader(object):
         self.browser = browser
 
     def is_there_next_page(self) -> bool:
-        paginator_element = self.browser.find_element(By.ID, "itemsPager")
+        paginator_element: WebElement = None
+        self.browser.implicitly_wait(5)
+        try:
+            paginator_element = self.browser.find_element(By.ID, "itemsPager")
+        except: pass
+
+        self.browser.implicitly_wait(browser_service.WAIT_LIMIT)
 
         if paginator_element is None:
             return False
